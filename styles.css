@@ -9,9 +9,10 @@
   }
   
   h1 {
+    position: relative;
     text-align: center;
     padding: 1.5rem 2.5rem;
-    background-color: #3a965d;
+    background-color: #7dcf9d;
     margin: 0 0 2rem 0;
     font-size: 1.5rem;
     color: black;
@@ -19,6 +20,7 @@
   }
 
   h2{
+    position: relative;
     text-align:center;
     padding: 5px 5px;
   }
@@ -40,11 +42,31 @@
   }
   
   .card {
-    margin: 1rem;
+    margin: 5px;
     background: white;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    border-radius: 12px;
-    overflow: hidden;
+    border-radius: 10px;
     width: 275px;
     padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .card::before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(https://i.pinimg.com/originals/0e/22/de/0e22de1ebe4dfc6b69bf6fad4dea090b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.15;
+    margin-bottom: -60px;
+  }
+
+  div{
+    background-color: rgb(229, 233, 243);
   }
